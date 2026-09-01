@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" preserveAspectRatio="xMidYMax slice">
+<defs>
+  <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(211,172,103,0.10)"/>
+    <stop offset="1" stop-color="rgba(211,172,103,0)"/>
+  </linearGradient>
+  <linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(211,172,103,0.09)"/>
+    <stop offset="1" stop-color="rgba(211,172,103,0)"/>
+  </linearGradient>
+  <linearGradient id="shaft2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(226,235,245,0.05)"/>
+    <stop offset="1" stop-color="rgba(226,235,245,0)"/>
+  </linearGradient>
+  <linearGradient id="colfade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="rgba(255,255,255,0.06)"/>
+    <stop offset="1" stop-color="rgba(255,255,255,0)"/>
+  </linearGradient>
+  <radialGradient id="lampglow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="rgba(211,172,103,0.35)"/>
+    <stop offset="1" stop-color="rgba(211,172,103,0)"/>
+  </radialGradient>
+  <radialGradient id="weldglow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="rgba(255,225,170,0.65)"/>
+    <stop offset="0.4" stop-color="rgba(211,172,103,0.28)"/>
+    <stop offset="1" stop-color="rgba(211,172,103,0)"/>
+  </radialGradient>
+  <radialGradient id="floorglow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="rgba(211,172,103,0.10)"/>
+    <stop offset="1" stop-color="rgba(211,172,103,0)"/>
+  </radialGradient>
+</defs>
+
+<!-- ===== light shafts ===== -->
+<polygon points="1150,0 1320,0 1010,900 850,900" fill="url(#shaft)"/>
+<polygon points="1370,0 1450,0 1230,900 1150,900" fill="url(#shaft2)"/>
+<polygon points="620,0 700,0 520,760 450,760" fill="url(#shaft2)" opacity="0.6"/>
+
+<!-- ===== roof truss band ===== -->
+<g stroke="rgba(255,255,255,0.055)" stroke-width="2">
+  <path d="M0 62h1600M0 110h1600"/>
+  <path d="M0 110L45 62L90 110L135 62L180 110L225 62L270 110L315 62L360 110L405 62L450 110L495 62L540 110L585 62L630 110L675 62L720 110L765 62L810 110L855 62L900 110L945 62L990 110L1035 62L1080 110L1125 62L1170 110L1215 62L1260 110L1305 62L1350 110L1395 62L1440 110L1485 62L1530 110L1575 62L1600 88"/>
+  <path d="M90 62v48M270 62v48M450 62v48M630 62v48M810 62v48M990 62v48M1170 62v48M1350 62v48M1530 62v48"/>
+</g>
+<!-- support columns fading down -->
+<rect x="138" y="110" width="7" height="330" fill="url(#colfade)"/>
+<rect x="518" y="110" width="7" height="330" fill="url(#colfade)"/>
+<rect x="898" y="110" width="7" height="330" fill="url(#colfade)"/>
+<rect x="1278" y="110" width="7" height="330" fill="url(#colfade)"/>
+
+<!-- ===== hanging lights ===== -->
+<g>
+  <path d="M380 110v58M800 110v58M1220 110v58" stroke="rgba(255,255,255,0.10)" stroke-width="2.5"/>
+  <polygon points="354,168 406,168 420,196 340,196" fill="rgba(20,38,60,0.9)" stroke="rgba(211,172,103,0.30)" stroke-width="1.5"/>
+  <polygon points="774,168 826,168 840,196 760,196" fill="rgba(20,38,60,0.9)" stroke="rgba(211,172,103,0.30)" stroke-width="1.5"/>
+  <polygon points="1194,168 1246,168 1260,196 1180,196" fill="rgba(20,38,60,0.9)" stroke="rgba(211,172,103,0.30)" stroke-width="1.5"/>
+  <ellipse cx="380" cy="200" rx="34" ry="11" fill="url(#lampglow)"/>
+  <ellipse cx="800" cy="200" rx="34" ry="11" fill="url(#lampglow)"/>
+  <ellipse cx="1220" cy="200" rx="34" ry="11" fill="url(#lampglow)"/>
+  <polygon points="346,198 414,198 500,560 260,560" fill="url(#cone)"/>
+  <polygon points="766,198 834,198 920,560 680,560" fill="url(#cone)"/>
+  <polygon points="1186,198 1254,198 1340,560 1100,560" fill="url(#cone)"/>
+</g>
+
+<!-- ===== distant production line (center-bottom) ===== -->
+<g opacity="0.55">
+  <polygon points="500,700 640,700 640,830 500,830 500,760 470,760 470,720 500,720" fill="#152e4a"/>
+  <rect x="524" y="718" width="88" height="54" fill="rgba(226,235,245,0.05)" stroke="rgba(211,172,103,0.18)" stroke-width="1.2"/>
+  <rect x="660" y="738" width="118" height="92" fill="#152e4a"/>
+  <rect x="676" y="756" width="86" height="8" fill="rgba(211,172,103,0.15)"/>
+  <rect x="800" y="702" width="15" height="128" fill="#152e4a"/>
+  <rect x="824" y="722" width="15" height="108" fill="#152e4a"/>
+  <rect x="848" y="742" width="15" height="88" fill="#152e4a"/>
+  <path d="M470 830h400" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+</g>
+
+<!-- ===== workpiece on stand (fed to robot) ===== -->
+<g>
+  <rect x="930" y="530" width="180" height="27" rx="4" fill="#1c3654" stroke="rgba(211,172,103,0.28)" stroke-width="1.5"/>
+  <path d="M962 557v246M1072 557v246" stroke="#152e4a" stroke-width="9"/>
+  <path d="M938 806h148" stroke="#152e4a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M930 543h-140" stroke="rgba(211,172,103,0.16)" stroke-width="2" stroke-dasharray="10 8"/>
+</g>
+
+<!-- ===== robotic arm (right) ===== -->
+<g>
+  <!-- base -->
+  <rect x="1352" y="798" width="166" height="26" rx="7" fill="#1a3453"/>
+  <rect x="1390" y="736" width="90" height="66" rx="12" fill="#1e3a5c"/>
+  <!-- lower arm -->
+  <line x1="1435" y1="726" x2="1290" y2="545" stroke="#22405f" stroke-width="48" stroke-linecap="round"/>
+  <line x1="1449" y1="715" x2="1304" y2="534" stroke="rgba(211,172,103,0.30)" stroke-width="3" stroke-linecap="round"/>
+  <!-- upper arm -->
+  <line x1="1290" y1="545" x2="1150" y2="470" stroke="#22405f" stroke-width="36" stroke-linecap="round"/>
+  <line x1="1296" y1="531" x2="1156" y2="456" stroke="rgba(211,172,103,0.30)" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- cable -->
+  <path d="M1462 748 Q1350 640 1298 560 Q1240 500 1168 478" stroke="rgba(8,16,28,0.8)" stroke-width="4" fill="none"/>
+  <!-- joints -->
+  <circle cx="1435" cy="726" r="30" fill="#0f2237" stroke="rgba(211,172,103,0.45)" stroke-width="2"/>
+  <circle cx="1435" cy="726" r="5" fill="rgba(211,172,103,0.5)"/>
+  <circle cx="1290" cy="545" r="24" fill="#0f2237" stroke="rgba(211,172,103,0.45)" stroke-width="2"/>
+  <circle cx="1290" cy="545" r="4.5" fill="rgba(211,172,103,0.5)"/>
+  <circle cx="1150" cy="470" r="17" fill="#0f2237" stroke="rgba(211,172,103,0.45)" stroke-width="2"/>
+  <!-- effector / torch -->
+  <line x1="1150" y1="470" x2="1121" y2="500" stroke="#22405f" stroke-width="13" stroke-linecap="round"/>
+  <line x1="1121" y1="500" x2="1104" y2="518" stroke="#2c4d70" stroke-width="6" stroke-linecap="round"/>
+  <!-- weld glow + sparks -->
+  <circle cx="1100" cy="524" r="30" fill="url(#weldglow)"/>
+  <circle cx="1100" cy="524" r="4" fill="#ffe9c4" opacity="0.9"/>
+  <g stroke="rgba(255,220,150,0.55)" stroke-width="1.6" stroke-linecap="round">
+    <path d="M1086 536l-11 10M1092 544l-6 13M1108 542l5 12M1116 534l12 9M1082 524l-14 2"/>
+  </g>
+</g>
+
+<!-- ===== floor ===== -->
+<path d="M0 830h1600" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+<ellipse cx="1290" cy="846" rx="240" ry="16" fill="url(#floorglow)"/>
+<ellipse cx="620" cy="846" rx="180" ry="12" fill="url(#floorglow)" opacity="0.5"/>
+<path d="M1080 862h360M1160 878h240" stroke="rgba(211,172,103,0.08)" stroke-width="2"/>
+
+<!-- ===== dust motes ===== -->
+<g fill="rgba(255,255,255,0.13)">
+  <circle cx="1245" cy="300" r="1.6"/><circle cx="1180" cy="380" r="1.2"/><circle cx="1330" cy="250" r="1.4"/>
+  <circle cx="1090" cy="330" r="1.2"/><circle cx="1275" cy="430" r="1.3"/><circle cx="960" cy="280" r="1.2"/>
+  <circle cx="840" cy="330" r="1.3"/><circle cx="770" cy="260" r="1.1"/><circle cx="410" cy="300" r="1.2"/>
+</g>
+<g fill="rgba(211,172,103,0.30)">
+  <circle cx="1210" cy="350" r="1.6"/><circle cx="1150" cy="420" r="1.3"/><circle cx="805" cy="300" r="1.4"/>
+  <circle cx="385" cy="260" r="1.3"/><circle cx="1300" cy="330" r="1.2"/>
+</g>
+</svg>

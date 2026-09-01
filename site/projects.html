@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — From Drawing to Delivery — Aura North America</title>
+  <meta name="description" content="Representative Aura North America programs: custom aluminum extrusions, zinc die-cast assemblies, overmolded enclosures and CNC machined components — engineered, manufactured, inspected and stocked in North America.">
+  <meta property="og:title" content="Projects — From Drawing to Delivery — Aura North America">
+  <meta property="og:description" content="Representative Aura North America programs: custom aluminum extrusions, zinc die-cast assemblies, overmolded enclosures and CNC machined components — engineered, manufactured, inspected and stocked in North America.">
+  <meta property="og:image" content="https://auranorthamerica.com/assets/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Cinzel:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .case {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(30px, 4.5vw, 64px);
+      align-items: start;
+      padding: clamp(40px, 5vw, 60px) 0;
+      border-top: 1px solid var(--line);
+    }
+    .case:first-of-type { border-top: 0; padding-top: 0; }
+    .case__visual {
+      position: sticky;
+      top: calc(var(--header-h) + 24px);
+      border-radius: 14px;
+      overflow: hidden;
+      background: linear-gradient(150deg, var(--navy-800), var(--navy-950));
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-bright);
+    }
+    .case__visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .case__visual svg { width: 130px; height: 130px; position: relative; opacity: 0.92; }
+    .case__visual img { width: 100%; height: auto; position: relative; padding: 12px 6px; }
+    .case__tag {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-bright);
+      border: 1px solid rgba(185,146,76,0.5);
+      background: rgba(8,16,28,0.55);
+      padding: 6px 12px;
+      border-radius: 99px;
+    }
+    .case h2 { font-size: clamp(1.5rem, 2.6vw, 2.05rem); margin-bottom: 6px; }
+    .case__client {
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      letter-spacing: 0.08em;
+      color: var(--gold-deep);
+      margin-bottom: 22px;
+    }
+    .case h3 {
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--navy-800);
+      margin: 24px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .case h3::before { content: ""; width: 22px; height: 2px; background: var(--gold); }
+    .case p { color: var(--muted); font-size: 15.5px; }
+    .case .chips { margin-top: 12px; }
+    .case__results {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .case__results div {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 16px 14px;
+    }
+    .case__results b { display: block; font-size: 1.25rem; font-weight: 800; color: var(--navy-800); letter-spacing: -0.02em; }
+    .case__results span { font-size: 12.5px; color: var(--muted); line-height: 1.4; display: block; margin-top: 3px; }
+    @media (max-width: 900px) {
+      .case { grid-template-columns: 1fr; }
+      .case__visual { position: static; min-height: 220px; }
+      .case__results { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <a href="index.html" class="brand" aria-label="Aura North America — Home">
+      <span class="brand__main">AURA
+        <svg class="swoosh" viewBox="0 0 120 24" aria-hidden="true"><path d="M0 22 C 36 20 78 10 120 1 C 84 15 40 23.5 0 22 Z" fill="#b9924c"/></svg>
+      </span>
+      <span class="brand__sub">North America</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-drop">
+        <a href="capabilities.html">Capabilities
+          <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+        <div class="drop">
+          <a href="capabilities.html">All Capabilities</a>
+          <div class="drop__rule"></div>
+          <a href="engineering.html">Engineering &amp; Development</a>
+          <a href="plastics.html">Plastic Manufacturing</a>
+          <a href="metals.html">Metal Manufacturing</a>
+          <a href="finishing.html">Surface Finishing</a>
+          <a href="prototyping.html">Prototyping &amp; 3D Printing</a>
+          <a href="quality.html">Quality Control</a>
+          <a href="warehousing.html">Warehousing &amp; Logistics</a>
+        </div>
+      </li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="projects.html" class="is-active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portal.html">Customer Portal</a></li>
+      <li><a href="contact.html" class="nav__cta">Request a Quote</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__inner">
+      <p class="page-hero__crumb"><a href="index.html">Home</a> <span class="sep">/</span> Projects</p>
+      <h1 class="h-display">From Drawing to Delivery</h1>
+      <p class="lead">Representative programs showing how Aura takes a component from engineering review to scheduled releases — customer names withheld, discipline identical.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <article class="case reveal">
+      <div class="case__visual">
+        <span class="case__tag">Aluminum Extrusion</span>
+        <img src="assets/img/proj-extrusion.svg" alt="Hollow aluminum C-channel profile cross-section with screw bosses, hatched cut walls and a 180.0 dimension">
+      </div>
+      <div>
+        <h2>Custom Aluminum Profile Program</h2>
+        <p class="case__client">CUSTOMER: NORTH AMERICAN DOOR MANUFACTURER</p>
+        <h3>Challenge</h3>
+        <p>The customer required a custom aluminum profile with tight straightness tolerances and an architectural anodized finish — previously sourced domestically at a piece price that made the end product uncompetitive, with no backup capacity.</p>
+        <h3>Aura solution</h3>
+        <p>Engineering review of the profile and tolerance stack, die tooling with a qualified extrusion partner, first-article validation, anodizing to the customer's color standard, and a stocking program at our Canadian warehouse with monthly scheduled releases.</p>
+        <ul class="chips"><li>Engineering review</li><li>Die tooling</li><li>Extrusion</li><li>Anodizing</li><li>FAI</li><li>Warehousing</li></ul>
+        <h3>Result</h3>
+        <div class="case__results">
+          <div><b>6 wks</b><span>from die order to first article approval</span></div>
+          <div><b>±0.15 mm</b><span>held on critical profile dimensions</span></div>
+          <div><b>Monthly</b><span>releases from Canadian stock — no container handling for the customer</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <div class="case__visual">
+        <span class="case__tag">Zinc Die Casting</span>
+        <img src="assets/img/proj-latch.svg" alt="Die-cast latch body illustration with keyhole, pivoting gold lever and mounting holes">
+      </div>
+      <div>
+        <h2>Die-Cast Latch Assembly</h2>
+        <p class="case__client">CUSTOMER: COMMERCIAL HARDWARE OEM</p>
+        <h3>Challenge</h3>
+        <p>A four-part latch assembly — cast body, machined features, powder coat, spring assembly — managed across three separate suppliers, with finger-pointing whenever a lot failed fit-up at the customer's line.</p>
+        <h3>Aura solution</h3>
+        <p>Consolidated the entire assembly under one Aura part number: Zamak 3 high-pressure die casting, CNC-machined datum features, black powder coat, assembly and 100% functional gauging before packing.</p>
+        <ul class="chips"><li>Zamak 3 casting</li><li>CNC machining</li><li>Powder coating</li><li>Assembly</li><li>Functional gauging</li></ul>
+        <h3>Result</h3>
+        <div class="case__results">
+          <div><b>4 → 1</b><span>purchase orders consolidated into one</span></div>
+          <div><b>100%</b><span>of assemblies functionally gauged before shipment</span></div>
+          <div><b>One</b><span>accountable partner when anything needs answering</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <div class="case__visual">
+        <span class="case__tag">Injection Molding</span>
+        <img src="assets/img/proj-enclosure.svg" alt="Overmolded enclosure illustration with gold TPE grip band, status LED and connector port">
+      </div>
+      <div>
+        <h2>Overmolded Enclosure</h2>
+        <p class="case__client">CUSTOMER: CONSUMER PRODUCTS BRAND</p>
+        <h3>Challenge</h3>
+        <p>A two-material enclosure (rigid ABS shell, TPE grip zones) quoted domestically with tooling that broke the project budget — and a launch date that couldn't move.</p>
+        <h3>Aura solution</h3>
+        <p>DFM review simplified the parting line and eliminated one slide action, cutting tool cost before steel was ever ordered. Two prototype loops (SLA, then soft tool) validated grip feel; production launched on a two-shot tool with color-matched resin.</p>
+        <ul class="chips"><li>DFM review</li><li>SLA prototypes</li><li>2-shot tooling</li><li>Color match</li><li>Stocking program</li></ul>
+        <h3>Result</h3>
+        <div class="case__results">
+          <div><b>2 loops</b><span>from first sample to approved boundary sample</span></div>
+          <div><b>1 slide</b><span>removed from the tool at DFM — permanent cost out</span></div>
+          <div><b>Stocked</b><span>launch quantities held in North America before go-live</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="case reveal">
+      <div class="case__visual">
+        <span class="case__tag">CNC Machining</span>
+        <img src="assets/img/proj-shaft.svg" alt="Machined shaft side-view drawing with stepped diameters, keyway, threaded end and tolerance callouts">
+      </div>
+      <div>
+        <h2>Precision Machined Shaft Family</h2>
+        <p class="case__client">CUSTOMER: INDUSTRIAL EQUIPMENT BUILDER</p>
+        <h3>Challenge</h3>
+        <p>A family of six stainless shafts with ground bearing surfaces, ordered irregularly in small batches — every order requoted, every lead time a negotiation, every price different.</p>
+        <h3>Aura solution</h3>
+        <p>Blanket-order program across the full family: economic batch production, CMM inspection against agreed critical dimensions, and safety stock in Canada with releases against the customer's build schedule.</p>
+        <ul class="chips"><li>303 / 17-4 PH</li><li>Turning + grinding</li><li>CMM inspection</li><li>Blanket order</li><li>Safety stock</li></ul>
+        <h3>Result</h3>
+        <div class="case__results">
+          <div><b>6 SKUs</b><span>on one blanket agreement with fixed pricing</span></div>
+          <div><b>Days</b><span>from release call-off to dock, instead of weeks</span></div>
+          <div><b>CMM</b><span>report attached to every lot in the customer portal</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="cta-band reveal" style="margin-top:64px">
+      <div>
+        <h2>Your part could be the next one here.</h2>
+        <p>Send the drawing — we'll show you what the program would look like.</p>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--gold">Request a Quote
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 3.5L13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="brand" aria-label="Aura North America — Home">
+          <span class="brand__main">AURA
+            <svg class="swoosh" viewBox="0 0 120 24" aria-hidden="true"><path d="M0 22 C 36 20 78 10 120 1 C 84 15 40 23.5 0 22 Z" fill="#b9924c"/></svg>
+          </span>
+          <span class="brand__sub">North America</span>
+        </a>
+        <p>OEM manufacturing &amp; supply-chain partner. From engineering to production, from production to your warehouse.</p>
+      </div>
+      <div>
+        <h4>Capabilities</h4>
+        <ul>
+          <li><a href="engineering.html">Engineering &amp; Development</a></li>
+          <li><a href="plastics.html">Plastic Manufacturing</a></li>
+          <li><a href="metals.html">Metal Manufacturing</a></li>
+          <li><a href="finishing.html">Surface Finishing</a></li>
+          <li><a href="prototyping.html">Prototyping &amp; 3D Printing</a></li>
+          <li><a href="quality.html">Quality Control</a></li>
+          <li><a href="warehousing.html">Warehousing &amp; Logistics</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Aura</a></li>
+          <li><a href="industries.html">Industries</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="portal.html">Customer Portal</a></li>
+          <li><a href="contact.html">Request a Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer__contact">
+          <li>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4l6 4.5L14 4M2.5 3h11a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" stroke="currentColor" stroke-width="1.3"/></svg>
+            <a href="mailto:support@auranorthamerica.com">support@auranorthamerica.com</a>
+          </li>
+          <li>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14s5-4.4 5-8a5 5 0 1 0-10 0c0 3.6 5 8 5 8z" stroke="currentColor" stroke-width="1.3"/><circle cx="8" cy="6" r="1.8" stroke="currentColor" stroke-width="1.3"/></svg>
+            <span>Headquartered in Canada<br>Serving the U.S. &amp; Canada</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2026 Aura North America. All rights reserved. · <a href="privacy.html">Privacy Policy</a></span>
+      <span>Engineering · Manufacturing · Quality · Warehousing · Delivery</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

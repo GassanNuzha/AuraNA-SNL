@@ -1,0 +1,6 @@
+# build artifact — regenerate by zipping site/ (see README-DEPLOY.md)
+aura-site.zip
+
+# OS noise
+Thumbs.db
+.DS_Store

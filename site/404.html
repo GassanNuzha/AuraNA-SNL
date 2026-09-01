@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Aura North America</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Cinzel:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .nf-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background:
+        radial-gradient(900px 420px at 70% -10%, rgba(185, 146, 76, 0.14), transparent 60%),
+        linear-gradient(160deg, var(--navy-900) 0%, var(--navy-950) 60%, var(--ink) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .nf-wrap::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse 70% 70% at 50% 40%, black 30%, transparent 75%);
+      pointer-events: none;
+    }
+    .nf-inner { position: relative; max-width: 560px; }
+    .nf-code {
+      font-family: var(--font-mono);
+      font-size: clamp(4.5rem, 12vw, 7.5rem);
+      font-weight: 500;
+      color: var(--gold-bright);
+      letter-spacing: 0.08em;
+      line-height: 1;
+    }
+    .nf-tag {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      color: var(--faint-dark);
+      text-transform: uppercase;
+      margin: 18px 0 10px;
+    }
+    .nf-inner h1 { color: #fff; font-size: clamp(1.5rem, 3.5vw, 2.1rem); margin-bottom: 12px; }
+    .nf-inner p { color: var(--muted-dark); margin-bottom: 30px; }
+    .nf-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .nf-brand { margin-bottom: 44px; display: inline-flex; }
+  </style>
+</head>
+<body>
+
+<div class="nf-wrap">
+  <div class="nf-inner">
+    <a href="/" class="brand nf-brand" aria-label="Aura North America — Home">
+      <span style="display:inline-flex;flex-direction:column">
+        <span class="brand__main">AURA
+          <svg class="swoosh" viewBox="0 0 120 24" aria-hidden="true"><path d="M0 22 C 36 20 78 10 120 1 C 84 15 40 23.5 0 22 Z" fill="#b9924c"/></svg>
+        </span>
+        <span class="brand__sub">North America</span>
+      </span>
+    </a>
+    <div class="nf-code">404</div>
+    <p class="nf-tag">Part not found in catalog</p>
+    <h1>This page doesn't exist — or was revised out.</h1>
+    <p>The address may have been mistyped, or the page may have moved. Everything we make is still one click away.</p>
+    <div class="nf-actions">
+      <a href="/" class="btn btn--gold">Back to Home</a>
+      <a href="/capabilities.html" class="btn btn--ghost-dark">Capabilities</a>
+      <a href="/contact.html" class="btn btn--ghost-dark">Request a Quote</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
